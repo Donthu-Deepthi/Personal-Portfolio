@@ -151,6 +151,97 @@ input, textarea {
   color: var(--smoky-black);
 }
 
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 10px;
+}
+
+.tech-item {
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15); /* Transparent rectangle */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  backdrop-filter: blur(3px); /* For a frosted-glass effect */
+}
+
+.project-button::before {
+  content: none !important;
+  position: static !important;
+  background: none !important;
+}
+
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;  /* Removes underline for <a> */
+  border-radius: 6px;
+  background-color: #444;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 30px;
+  margin-right: 45px;
+}
+
+.project-button:hover {
+  background-color: #ff9800;
+  transform: translateY(-2px);
+}
+
+/*-----------------------------------*\
+  #RESUME SECTION
+\*-----------------------------------*/
+
+.resume-section {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.resume-text {
+  color: var(--light-gray);
+  font-size: 25px;
+  font-weight: var(--fw-300);
+  margin-bottom: 20px;
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border: 2px solid #f8d752;   /* Yellow border */
+  color: #f8d752;              /* Yellow text */
+  background-color: transparent;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.resume-btn ion-icon {
+  font-size: 18px;
+}
+
+.resume-btn:hover {
+  background-color: #f8d752;
+  color: #000; /* Black text on hover */
+  transform: translateY(-2px);
+}
+
+
+
 :focus { outline-color: var(--orange-yellow-crayola); }
 
 html { font-family: var(--ff-poppins); }
@@ -1042,16 +1133,17 @@ main {
   gap: 20px;
 }
 
-.blog-post-item > a {
+.blog-post-item > .blog-card {
   position: relative;
   background: var(--border-gradient-onyx);
   height: 100%;
   box-shadow: var(--shadow-4);
   border-radius: 16px;
   z-index: 1;
+
 }
 
-.blog-post-item > a::before {
+.blog-post-item > .blog-card::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -1059,6 +1151,7 @@ main {
   background: var(--eerie-black-1);
   z-index: -1;
 }
+
 
 .blog-banner-box {
   width: 100%;
@@ -1138,8 +1231,10 @@ main {
   width: 100%;
   height: 100%;
   border: none;
-  filter: grayscale(1) invert(1);
+  filter: none;
 }
+
+
 
 .contact-form { margin-bottom: 10px; }
 
@@ -1880,3 +1975,4 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+

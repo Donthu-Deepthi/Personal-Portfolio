@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Personal Portfolio</title>
 
   <!--
     - favicon
@@ -177,15 +177,19 @@
           </li>
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Details</button>
+          </li>
+
+          <!--<li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Res</button>
+          </li>-->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
           </li>
 
           <li class="navbar-item">
@@ -283,7 +287,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="camera icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -305,6 +309,7 @@
           - testimonials
         -->
 
+        <!--
         <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
@@ -401,7 +406,7 @@
 
           </ul>
 
-        </section>
+        </section>-->
 
 
         <!--
@@ -453,7 +458,7 @@
           - clients
         -->
 
-        <section class="clients">
+        <!--<section class="clients">
 
           <h3 class="h3 clients-title">Clients</h3>
 
@@ -498,6 +503,7 @@
           </ul>
 
         </section>
+      -->
 
       </article>
 
@@ -509,10 +515,10 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="details">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title">Details</h2>
         </header>
 
         <section class="timeline">
@@ -574,49 +580,33 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Internships</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">AWS Cloud</h4>
 
-              <span>2015 — Present</span>
+              <span>July — Sept 2024</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                 AWS services such as EC2, S3, Lambda, and IAM through guided labs and real-world scenarios.
+                  Designed and deployed scalable cloud-based solutions, focusing on cloud security.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+              <h4 class="h4 timeline-item-title"> Web Development</h4>
 
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
+              <span>Apr — May 2025</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Developed interactive web applications including a to-do list, calculator, e-commerce website, and 
+                Connect Four game using HTML, CSS, and JavaScript, demonstrating front-end development proficiency.
               </p>
 
             </li>
@@ -751,10 +741,10 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="res">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Resume</h2>
         </header>
 
         <section class="projects">
@@ -991,7 +981,7 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="blog" data-page="projects">
 
         <header>
           <h2 class="h2 article-title">Projects</h2>
@@ -1002,172 +992,86 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="#">
-
+              <div class="blog-card">
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/Teamwork.png" alt="Design conferences in 2022" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Full Stack</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">January 2025</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  <h3 class="h3 blog-item-title">TeamWork Management System</h3>
+                  <p class="blog-text">A platform which focuses on viewing the progress of assigned tasks 
+                    which are assigned by guides and doing by the team of students.
                   </p>
 
-                </div>
+                  <div class="tech-stack">
+                    <span class="tech-item">HTML</span>
+                    <span class="tech-item">CSS</span>
+                    <span class="tech-item">JavaScript</span>
+                    <span class="tech-item">Node.js</span>
+                    <span class="tech-item">Express.js</span>
+                    <span class="tech-item">MongoDB</span>
+                  </div>
 
-              </a>
+                  <div>
+                    <a href="#" target="_blank" class="project-button">
+                      <ion-icon name="eye-outline"></ion-icon>
+                      <span>Live Demo</span>
+                    </a>
+                    <a href="https://github.com/Donthu-Deepthi/Team-Work-Management-System" target="_blank" class="project-button">
+                      <ion-icon name="code-slash-outline"></ion-icon>
+                      <span>Source Code</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </li>
+
 
             <li class="blog-post-item">
-              <a href="#">
-
+              <div class="blog-card">
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/E-commerce.png" alt="Design conferences in 2022" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Frontend</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">February 2025</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  <h3 class="h3 blog-item-title">E-Commerce</h3>
+                  <p class="blog-text">A website that having all stationary and products and 
+                    also able to add to cart and place the order with affordable prices.
                   </p>
 
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  <div class="tech-stack">
+                    <span class="tech-item">HTML</span>
+                    <span class="tech-item">CSS</span>
+                    <span class="tech-item">JavaScript</span>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  <div>
+                    <a href="https://e-commerce-seven-rose-21.vercel.app/" target="_blank" class="project-button">
+                      <ion-icon name="eye-outline"></ion-icon>
+                      <span>Live Demo</span>
+                    </a>
+                    <a href="https://github.com/Donthu-Deepthi/e-commerce" target="_blank" class="project-button">
+                      <ion-icon name="code-slash-outline"></ion-icon>
+                      <span>Source Code</span>
+                    </a>
                   </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
                 </div>
-
-              </a>
+              </div>
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
 
           </ul>
 
@@ -1191,9 +1095,9 @@
 
         <section class="mapbox" data-mapbox>
           <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.250621526939!2d80.64291887838733!3d16.23096644443481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a05e24a4db9ab%3A0x2f56e2c8122b6f3f!2s17-22-3%2C%20Salipet%2C%20Ramalingeswara%20Pet%2C%20Tenali%2C%20Andhra%20Pradesh%20522201!5e1!3m2!1sen!2sin!4v1752853882862!5m2!1sen!2sin" 
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </figure>
         </section>
 
@@ -1221,6 +1125,30 @@
         </section>
 
       </article>
+
+      <article class="blog" data-page="resume">
+
+  <header>
+    <h2 class="h2 article-title">Resume</h2>
+  </header>
+
+  <section class="resume-section">
+
+    <p class="resume-text">
+      You can download my latest resume here:
+    </p>
+
+    <div>
+      <a href="./assets/resume/22BQ1A0553.pdf" download class="project-button resume-btn">
+        <ion-icon name="download-outline"></ion-icon>
+        <span>Download Resume</span>
+      </a>
+    </div>
+
+  </section>
+
+</article>
+
 
     </div>
 
